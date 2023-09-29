@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    /* ## Colors
+    ### Primary */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    /* ### Neutral */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.header__container{
+    width: 100%;
+    height: 363px;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.main__container{
+    width: 375px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+/* Section General */
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-title{
+    margin-bottom: 20px;
+    font-size: 1.65em;
+}
+.section-paragraph{
+    font-size: 0.9em;
+    margin-bottom: 48px;
+    color: var(--Grayish-Blue);
+}
+/* Section ONE */
+.section__one-logo{
+    margin: 125px 0 70px;
+}
+
+.section__one-title{
+    margin-bottom: 20px;
+    font-size: 1.75em;
+}
+.section__one-paragraph{
+    font-size: 0.9em;
+    margin-bottom: 48px;
+    color: var(--Grayish-Blue);
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 160px;
+}
+.button-ios,
+.button-mac{
+    height: 52px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.5);
+}
+.button-ios{
+    background-color: var(--Strong-Cyan);
+    margin-bottom: 25px;
+}
+.button-ios:hover, 
+.button-mac:hover{
+    opacity: 0.7;
+}
+.button-mac{
+    background-color: var(--Light-Blue);
+}
+/* Section TWO */
+.section__two__snippets-computer{
+    height: 236px;
+    margin-top: 12px;
+}
+.section__two__snippets-content{
+    margin: 50px 0 185px;
+}
+.section__two__snippets-title{
+    margin-bottom: 15px;
+}
+.section__two__snippets-paragraph{
+    color: var(--Grayish-Blue);
+    font-size: 0.9em;
+}
+.sync{
+    margin: 50px 0;   
+}
+/* Section THREE */
+.section__three-image{
+    width: 348px;
+    margin: 20px 0 80px;
+}
+/* Section FOUR */
+.section__four-content{
+    margin: 40px 0 170px;
+}
+
+.section__four__workflow-content{
+    margin-bottom: 125px;   
+}
+.section__four__workflow__productivity-image{
+    margin-bottom: 35px;
+}
+.section__four__workflow__productivity-paragraph{
+    margin: 25px 0 50px;
+    color: var(--Grayish-Blue);
+    font-size: 0.9em;   
+}
+
+.section__four__partners-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.partners{
+    margin: 60px 0;
+}
+/* Footer */
+.footer{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fb;
+    color: var(--Dark-Grayish-Blue);
+}
+.footer-logo{
+    height: 55px;
+    margin-bottom: 40px;
+}
+
+.anchor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.anchor-group{
+    display: flex;
+    flex-direction: column;
+}
+.anchor a{
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 25px;
+}
+.anchor a:hover{
+    color: var(--Strong-Cyan);
+}
+
+.social-media{
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.social-media i:hover{
+    cursor: pointer;
+    color: var(--Strong-Cyan);
+}
+
+.attribution { 
+    background-color: #f4f4fb;
+    padding: 10px 0;
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { color: var(--Strong-Cyan); }
+
+@media (min-width: 1280px){
+    .header__container{
+        width: 100%;
+        height: 363px;
+        background-image: url(images/bg-header-desktop.png);
+    }
+    .main__container{
+        width: 100%;
+        padding: 0;
+    }
+    .section{
+        width: 810px;
+        margin: 0 auto;
+    }
+    .section-title{
+        font-size: 1.95em;
+    }
+    .section-paragraph{
+        font-size: 1.1em;
+        padding: 0 20px;
+        margin-bottom: 75px;
+    }
+    /* ONE */
+    .section__one-title{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .section__one-paragraph{
+        font-size: 1.15em;
+        padding: 0 25px;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+    .button-ios,
+    .button-mac{
+        width: 228px;
+        height: 52px;
+        margin: 0;
+    }
+    .button-ios{
+        margin-right: 15px;
+    }
+    /* TWO */
+    .section__two__snippets-container{
+        width: 95vw;
+        height: 570px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        position: relative;
+        margin-bottom: 150px;
+    }
+    .section__two__snippets-computer{
+        position: absolute;
+        width: 755px;
+        height: 100%;
+        left: -70px;
+    }
+    .section__two__snippets-content{
+        width: 355px;
+        position: absolute;
+        left: 800px;
+        text-align: left;
+        margin: 0;
+    }
+    .section__two__snippets-title{
+        font-size: 1.25em;
+        margin: 0;
+        margin: 60px 0 10px;
+    }
+    .section__two__snippets-paragraph{
+        font-size: 0.9em;
+        line-height: 30px;
+    }
+    /* THREE */
+    .section__three-image{
+        width: 110%;
+    }
+    /* FOUR */
+    .section__four-content{
+        width: 1110px;
+    }
+    
+    .section__four__workflow-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;  
+    }
+    .section__four__workflow__productivity{
+        width: 355px;
+        margin: 0;   
+    }
+    .ai, .eye{
+        margin-top: 8px;
+    }
+    .section__four__workflow__productivity-title{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .section__four__workflow__productivity-paragraph{
+        margin: 25px 0 150px;
+        font-size: 0.9em;
+    }
+    
+    .section__four__partners-content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .partners{
+        margin:0;
+    }
+    .footer{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-logo{
+        margin: 0;
+    }
+
+    .anchor{
+        width: 490px;
+        height: 60px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;  
+        text-align: left;
+        margin-left: -120px;
+    }
+    .anchor a{
+        margin-bottom: 15px;
+    }
+    .anchor-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media{
+        margin: 0;
+    }
+}
